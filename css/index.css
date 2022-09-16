@@ -51,9 +51,21 @@ body, p {
   transition: all 1s;
 }
 
+.navTile a{
+  scale: 1.2;
+}
+
 a, a:link, a:visited {
   color:black;
   text-decoration: none;
+}
+
+.connect {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f8e3277a;
+  cursor: pointer;
+  border: solid 1px #ffffff20;
 }
 
 .hide {
