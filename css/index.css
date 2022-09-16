@@ -52,7 +52,7 @@ body, p {
 }
 
 a, a:link, a:visited {
-  color:black
+  color:black;
   text-decoration: none;
 }
 
