@@ -12,10 +12,11 @@
 
 <body>
   <div class="navBar">
-    <div class="navTile button" onclick="handleChangePage(1)"><a href="#">Home</a></div>
-    <div class="navTile button" onclick="handleChangePage(2)"><a href="#about">About</a></div>
-    <div class="navTile button" onclick="handleChangePage(3)"><a href="#mint">Mint</a></div>
-    <div class="navTile button" onclick="handleChangePage(4)"><a href="#faq">FAQ</a></div>
+    <div class="navTile button" onclick="x.handleChangePage(1)"><a href="#">Home</a></div>
+    <div class="navTile button" onclick="x.handleChangePage(2)"><a href="#about">About</a></div>
+    <div class="navTile button" onclick="x.handleChangePage(3)"><a href="#team">Team</a></div>
+    <div class="navTile button" onclick="x.handleChangePage(4)"><a href="#mint">Mint</a></div>
+    <div class="navTile button" onclick="x.handleChangePage(5)"><a href="#faq">FAQ</a></div>
   </div>
   <!-- <div id="pureFullPage">
   <div class="page">
@@ -48,24 +49,24 @@
     </div>
   </div>
   <div id="page3" class="hide">
-    <div class="section centerBox button" id="3.1">
+    <div class="section " id="3.1">
       <p>Page 3.1</p>
-      <button class="connect">Connect Wallet</button>
-      <button class="mint hide">Mint</button>
-    </div>
-    <div class="section" id="3.2">
-      <p>Page 3.2</p>
     </div>
   </div>
   <div id="page4" class="hide">
+    <div class="section centerContainer" id="4.1">
+      <p>Page 4.1</p>
+      <button class="connect button" onclick="nft.connect()">Connect Wallet</button>
+      <button class="mint button hide">Mint</button>
+    </div>
+  </div>
+  <div id="page5" class="hide">
     <div class="section" id="4.1">
       <p>Page 4.1</p>
     </div>
-    <div class="section" id="4.2">
-      <p>Page 4.2</p>
-    </div>
   </div>
   <!-- <script src="../../dist/pureFullPage.min.js"></script> -->
+  <script src="./js/Xutil.js"></script>
   <script src="./js/index.js"></script>
 </body>
 

@@ -42,10 +42,21 @@ body, p {
 }
 
 .navTile:hover {
+  font-weight: 600;
+}
+
+.button {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f8e3277a;
+  cursor: pointer;
+  border: solid 1px #ffffff20;
+}
+
+.navTile:hover {
   border: solid 1px peachpuff;
   background-color: lemonchiffon;
-  transition: all 1s;
-  font-size: 18px;
+  transition: all 0.5s;
 }
 
 a, a:link, a:visited {
@@ -57,13 +68,6 @@ a, a:link, a:visited {
   padding: 18px;
 }
 
-.button {
-  text-align: center;
-  border-radius: 8px;
-  background-color: #f8e3277a;
-  cursor: pointer;
-  border: solid 1px #ffffff20;
-}
 
 .hide {
   display: none;
@@ -78,7 +82,7 @@ a, a:link, a:visited {
   height:800px;
 }
 
-.centerBox {
+.centerContainer {
   display: flex;
   align-items: center;
   justify-content: center;

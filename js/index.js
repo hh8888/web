@@ -28,45 +28,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 function init(){
   // var hash = window.location.hash.substr(1);
-  handleChangePage(1);
-  colorSections();
+  x.handleChangePage(1);
+  x.colorSections();
 }
 
-function handleChangePage(n){
-  hideAllPages();
-  showPage(n);
-}
-
-function showPage(n){
-  var page = document.querySelector("#page"+n);
-  if(page){
-    page.classList.remove("hide");
-    page.classList.add("show");
-    console.log("show:",n);
-  }
-}
-function hidePage(n){
-  var page = document.querySelector("#page"+n);
-  if(page){
-    page.classList.remove("show");
-    page.classList.add("hide");
-    console.log("hide:",n);
-  }
-}
-function hideAllPages(){
-  for(var i=0;i<10;i++){hidePage(i)}
-}
-function colorSections(){
-  var sections=document.querySelectorAll("div.section");
-  sections.forEach(a=>a.style.backgroundColor=randomColor(220));
-}
-
-function randomColor(brightness){
-  function randomChannel(brightness){
-    var r = 255-brightness;
-    var n = 0 | ((Math.random()*r) + brightness);
-    var s = n.toString(16);
-    return (s.length==1)?'0'+s:s; 
-  }
-  return '#' + randomChannel(brightness) + randomChannel(brightness) + randomChannel(brightness);
-}
